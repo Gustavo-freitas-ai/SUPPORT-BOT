@@ -4,28 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Suporte Bot</title>
 </head>
 
 <body>
 
-<main>
-    <div class="chat-container">
-        <h1>Support Bot</h1>
-        
-        {% if response %}
-        <div class="bot-response">
-            <strong>Bot:</strong> {{ response }}
+    <main>
+        <div class="chat-container">
+
+            <h1>Chat de Suporte</h1>
+
+            <div class="chat-box">
+
+                {% for usuario, mensagem in mensagens %}
+
+                {% if usuario == "Usuário" %}
+                <div class="mensagem usuario">
+                    <strong>{{ usuario }}:</strong>
+                    <p>{{ mensagem }}</p>
+                </div>
+                {% else %}
+                <div class="mensagem bot">
+                    <strong>{{ usuario }}:</strong>
+                    <p>{{ mensagem }}</p>
+                </div>
+                {% endif %}
+
+                {% endfor %}
+
+            </div>
+
+            <form method="POST" class="form-chat">
+                <input type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
+                <button type="submit">Enviar</button>
+            </form>
+
         </div>
-        {% endif %}
-        
-        <form method="POST">
-            <input type="text" name="message" placeholder="Digite sua mensagem..." required>
-            <button type="submit">Enviar</button>
-        </form>
-        
-    </div>
-</main>
+    </main>
 
 </body>
 
