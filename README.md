@@ -27,7 +27,7 @@ além da comunicação entre backend e frontend.
 
  ## 🎨 Layout
 
-![PC]([https://github.com/Gustavo-freitas-ai/LEVEL-QUIZ/blob/main/image.png](https://github.com/Gustavo-freitas-ai/SUPPORT-BOT/blob/main/Screenshot%202026-02-27%20194046.png))
+![PC](https://github.com/Gustavo-freitas-ai/SUPPORT-BOT/blob/main/Screenshot%202026-02-27%20194046.png)
 
 ## 💪 Como contribuir para o projeto
 
@@ -60,3 +60,4 @@ Gustavo Freitas Dias</a>
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
 Feito por Gustavo Freitas Dias👋🏽 [Entre em contato!](https://www.linkedin.com/in/gustavo-freitas-83a3a5366/)
+
