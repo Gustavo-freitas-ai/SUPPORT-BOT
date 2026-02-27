@@ -46,7 +46,6 @@ main {
     background-color: #2563EB;
     border: 1px solid #2563EB;
     font-size: 18px;
-
 }
 
 .chat-container form input::placeholder {
@@ -65,8 +64,17 @@ main {
     cursor: pointer;
 }
 
-.chat-box{
+.chat-container form button:hover {
+    background-color: #1E40AF;
+    color: #000000;
+}
+
+.chat-box {
     background-color: #B8BBC2;
     padding: 10px;
     border-radius: 6px;
+}
+
+p {
+    font-size: 18px;
 }
